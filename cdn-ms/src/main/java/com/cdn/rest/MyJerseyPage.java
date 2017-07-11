@@ -24,6 +24,7 @@ public class MyJerseyPage {
 		SeuObjeto obj = gson.fromJson(recurso, SeuObjeto.class);
 		armazena(obj) // armazenar na memoria o obj
 		String output = gson.toJson(new Boolean(b));
+		// tenho que ver como vai ser esse objeto
 		return Response.status(200).entity(output).build();
 	}
 	@GET
