@@ -16,6 +16,7 @@ import com.sun.research.ws.wadl.Response;
 public class MyJerseyPage {
 	//recebe String(Object(gson) ou String) do OS via POST
 	//guarda na memoria conteudo recebido do OS
+	//Teste Comentario TCC MAyara e Renan
 	@POST
 	@Path("/recebeInfoOS")
 	public Response recebeInfoDoOS(@FormParam("recurso") String recurso) 
