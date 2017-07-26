@@ -1,4 +1,4 @@
-package OrigemServer;
+package originserver;
 
 import java.io.File;
 import java.util.ArrayList;

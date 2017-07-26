@@ -1,10 +1,10 @@
-package OrigemServer;
+package originserver;
 import java.util.*;
 public class Arquivo {
 
 private String nome;
 private String extensao;
-private long enviada = -1;
+private long enviada = 0;
 private long tamanhoByte;
 
 
