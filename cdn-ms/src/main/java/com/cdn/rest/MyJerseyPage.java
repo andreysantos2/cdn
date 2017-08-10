@@ -37,9 +37,10 @@ public class MyJerseyPage {
 		System.out.println(lista.listaArquivos.size());
 		return null;
 	}
-	@POST
+	@GET
 	@Path("/mostraArquivo")
-	public Response mostraArquivo(@FormParam("i") String i) throws NumberFormatException, URISyntaxException{
-		return Response.status(303).entity(new URI(lista.listaArquivos.get(Integer.parseInt("2")).getNome())).build();
+	public String mostraArquivo(@QueryParam("i") String i) throws NumberFormatException, URISyntaxException{
+		System.out.println(lista.listaArquivos.get(Integer.parseInt(i)).getNome());
+		return "<img src='"+lista.listaArquivos.get(Integer.parseInt(i)).getNome()+"' height='500' width='500'><br>";
 	}
 }
